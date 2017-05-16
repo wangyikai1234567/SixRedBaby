@@ -62,7 +62,7 @@
             >
 
             <android.support.v7.widget.RecyclerView
-                android:id="@+id/recyclerview"
+                android:id="@+id/shop_recyclerview"
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_weight="1"
@@ -70,7 +70,7 @@
 
             <!--结算的线性布局-->
             <LinearLayout
-                android:id="@+id/ll_check_all"
+                android:id="@+id/shop_ll_check_all"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="#fff"
@@ -78,7 +78,7 @@
                 android:visibility="visible">
 
                 <CheckBox
-                    android:id="@+id/checkbox_all"
+                    android:id="@+id/shop_checkbox_all"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_centerVertical="true"
@@ -100,7 +100,7 @@
                     android:textSize="15sp"/>
 
                 <TextView
-                    android:id="@+id/tv_shopcart_total"
+                    android:id="@+id/shop_tv_total"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
@@ -110,7 +110,7 @@
                     android:textSize="15sp"/>
 
                 <Button
-                    android:id="@+id/btn_check_out"
+                    android:id="@+id/shop_btn_check_out"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:background="#ed3f3f"
@@ -121,7 +121,7 @@
 
             <!--点编辑,出现对产品删除的线性布局-->
             <LinearLayout
-                android:id="@+id/ll_delete"
+                android:id="@+id/shop_ll_delete"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="#fff"
@@ -130,7 +130,7 @@
                 android:visibility="gone">
 
                 <CheckBox
-                    android:id="@+id/cb_all"
+                    android:id="@+id/shop_cb_all"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_centerVertical="true"
@@ -145,7 +145,7 @@
                     android:textSize="15sp"/>
 
                 <Button
-                    android:id="@+id/btn_delete"
+                    android:id="@+id/shop_btn_delete"
                     android:layout_width="wrap_content"
                     android:layout_height="35dp"
                     android:background="@drawable/words"
@@ -154,7 +154,7 @@
                     android:textSize="15sp"/>
 
                 <Button
-                    android:id="@+id/btn_collection"
+                    android:id="@+id/shop_btn_collection"
                     android:layout_width="wrap_content"
                     android:layout_height="35dp"
                     android:layout_marginLeft="15dp"
