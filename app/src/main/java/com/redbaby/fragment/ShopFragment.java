@@ -76,8 +76,8 @@ public class ShopFragment extends BaseFragment implements View.OnClickListener {
         btnDelete.setOnClickListener(this);
         btnCollection.setOnClickListener(this);
 
-        //C.
-        initListener();
+//        //C.
+//        initListener();
 
         //返回布局对象
 
@@ -89,66 +89,76 @@ public class ShopFragment extends BaseFragment implements View.OnClickListener {
         return null;
     }
 
-    private void initListener() {
-//给编辑按钮设置状态标识,方便后面根据取出编辑按钮的标识做对应的逻辑操作
-        tvShopcartEdit.setTag(ACTION_EDIT);
-        //设置右上角编辑按钮的点击事件
-        tvShopcartEdit.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                //取出在编辑按钮设置的状态标识
-                int action = (int) view.getTag();
-                //如果状态是完成状态,那么切换完成状态的布局
-                if(action == ACTION_EDIT){
-                    showDelete();
-                }
-                //如果状态是编辑状态,那么切换编辑状态的布局
-                else{
-                    hideDelete();
-                }
-            }
-        });
-
-    }
-    //C.切换完成状态的布局
-    private void showDelete() {
-        //设置对应的文本和状态
-        tvShopcartEdit.setTag(ACTION_COMPLETE);
-        tvShopcartEdit.setText("完成");
-        //变成非勾选
-        if(mShoppingCartAdapter != null){
-            //调用ShoppingCartAdapter里设置全选或非全选的方法,传个false,该方法要是public,放可调用
-            mShoppingCartAdapter.checkAll_none(false);
-            //C2.对全选复选按钮状态进行检查,设置对应的状态
-            mShoppingCartAdapter.CheckboxAll();
-        }
-        //删除视图显示,结算视图隐藏
-        llDelete.setVisibility(View.VISIBLE);
-        llCheckAll.setVisibility(View.GONE);
-    }
-
-    //C.切换编辑状态的布局
-    private void hideDelete() {
-        //设置对应的文本和状态
-        tvShopcartEdit.setTag(ACTION_EDIT);
-        tvShopcartEdit.setText("编辑");
-        //变成非勾选
-        if(mShoppingCartAdapter != null){
-            //调用ShoppingCartAdapter里设置全选或非全选的方法,传个false,该方法要是public,放可调用
-            mShoppingCartAdapter.checkAll_none(true);
-            //C2.对全选复选按钮状态进行检查,设置对应的状态
-            mShoppingCartAdapter.CheckboxAll();
-            //C3.对价格进行重新计算
-            mShoppingCartAdapter.showTotalPrice();
-        }
-        //删除视图显示,结算视图隐藏
-        llDelete.setVisibility(View.GONE);
-        llCheckAll.setVisibility(View.VISIBLE);
-    }
-
-
     @Override
     public void initPopMenuData() {
+
+    }
+
+    @Override
+    public void onClick(View view) {
+
+    }
+
+//    private void initListener() {
+////给编辑按钮设置状态标识,方便后面根据取出编辑按钮的标识做对应的逻辑操作
+//        tvShopcartEdit.setTag(ACTION_EDIT);
+//        //设置右上角编辑按钮的点击事件
+//        tvShopcartEdit.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                //取出在编辑按钮设置的状态标识
+//                int action = (int) view.getTag();
+//                //如果状态是完成状态,那么切换完成状态的布局
+//                if(action == ACTION_EDIT){
+//                    showDelete();
+//                }
+//                //如果状态是编辑状态,那么切换编辑状态的布局
+//                else{
+//                    hideDelete();
+//                }
+//            }
+//        });
+//
+//    }
+//    //C.切换完成状态的布局
+//    private void showDelete() {
+//        //设置对应的文本和状态
+//        tvShopcartEdit.setTag(ACTION_COMPLETE);
+//        tvShopcartEdit.setText("完成");
+//        //变成非勾选
+//        if(mShoppingCartAdapter != null){
+//            //调用ShoppingCartAdapter里设置全选或非全选的方法,传个false,该方法要是public,放可调用
+//            mShoppingCartAdapter.checkAll_none(false);
+//            //C2.对全选复选按钮状态进行检查,设置对应的状态
+//            mShoppingCartAdapter.CheckboxAll();
+//        }
+//        //删除视图显示,结算视图隐藏
+//        llDelete.setVisibility(View.VISIBLE);
+//        llCheckAll.setVisibility(View.GONE);
+//    }
+//
+//    //C.切换编辑状态的布局
+//    private void hideDelete() {
+//        //设置对应的文本和状态
+//        tvShopcartEdit.setTag(ACTION_EDIT);
+//        tvShopcartEdit.setText("编辑");
+//        //变成非勾选
+//        if(mShoppingCartAdapter != null){
+//            //调用ShoppingCartAdapter里设置全选或非全选的方法,传个false,该方法要是public,放可调用
+//            mShoppingCartAdapter.checkAll_none(true);
+//            //C2.对全选复选按钮状态进行检查,设置对应的状态
+//            mShoppingCartAdapter.CheckboxAll();
+//            //C3.对价格进行重新计算
+//            mShoppingCartAdapter.showTotalPrice();
+//        }
+//        //删除视图显示,结算视图隐藏
+//        llDelete.setVisibility(View.GONE);
+//        llCheckAll.setVisibility(View.VISIBLE);
+//    }
+//
+//
+//    @Override
+//    public void initPopMenuData() {
 //        //A.打印出购物车模块的数据
 //        List<GoodsBean> goodsBeanList = CartStorage.getInstance().getAllData();
 ///*        for (int x = 0; x < goodsBeanList.size(); x++) {
@@ -214,8 +224,4 @@ public class ShopFragment extends BaseFragment implements View.OnClickListener {
 
     }
 
-    @Override
-    public void onClick(View view) {
 
-    }
-}
