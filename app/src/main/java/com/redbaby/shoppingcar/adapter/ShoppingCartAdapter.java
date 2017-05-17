@@ -11,7 +11,7 @@ import java.util.List;
 /**
  * data:2017/5/17
  * author:高亚男(Administrator)
- * function:
+ * function:购物车适配器
  */
 
 public class ShoppingCartAdapter {
