@@ -1,17 +1,10 @@
-package com.redbaby.adapter;
+package com.redbaby.shoppingcar.adapter;
 
 import android.content.Context;
-import android.support.v7.widget.RecyclerView;
-import android.view.View;
-import android.view.ViewGroup;
 import android.widget.CheckBox;
-import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.bumptech.glide.Glide;
-import com.redbaby.R;
 import com.redbaby.bean.GoodsBean;
-import com.redbaby.utils.CartStorage;
 
 import java.util.List;
 

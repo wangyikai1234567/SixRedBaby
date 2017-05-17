@@ -1,10 +1,9 @@
-package com.redbaby.fragment;
+package com.redbaby.shoppingcar;
 
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
-import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -16,12 +15,8 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import com.redbaby.R;
-import com.redbaby.adapter.ShoppingCartAdapter;
+import com.redbaby.shoppingcar.adapter.ShoppingCartAdapter;
 import com.redbaby.base.BaseFragment;
-import com.redbaby.bean.GoodsBean;
-import com.redbaby.utils.CartStorage;
-
-import java.util.List;
 
 /**
  * A simple {@link Fragment} subclass.
