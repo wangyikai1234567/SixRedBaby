@@ -4,7 +4,9 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/RedBaby.iml" filepath="$PROJECT_DIR$/RedBaby.iml" />
       <module fileurl="file://$PROJECT_DIR$/SixRedBaby.iml" filepath="$PROJECT_DIR$/SixRedBaby.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SixRedBaby.iml" filepath="$PROJECT_DIR$/SixRedBaby.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mycustomrefresh/mycustomrefresh.iml" filepath="$PROJECT_DIR$/mycustomrefresh/mycustomrefresh.iml" />
     </modules>
   </component>
 </project>

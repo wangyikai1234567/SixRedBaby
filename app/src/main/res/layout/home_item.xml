@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:srcCompat="@mipmap/ic_launcher"
+        android:layout_gravity="center"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <LinearLayout
+            style="@style/MainItemLinear"
+            >
+            <ImageView
+                style="@style/MainItem_iv"
+                app:srcCompat="@mipmap/ic_launcher"
+                android:id="@+id/day_iv_main"
+                />
+
+            <TextView
+                style="@style/view"
+                android:text="每日抽奖"
+                android:id="@+id/day_tv_main"
+                />
+        </LinearLayout>
+        <LinearLayout
+            style="@style/MainItemLinear"
+            >
+            <ImageView
+                android:id="@+id/lingquan_iv_main"
+                app:srcCompat="@mipmap/ic_launcher"
+                style="@style/MainItem_iv"
+                />
+
+            <TextView
+                style="@style/view"
+                android:text="领券中心"
+                android:id="@+id/lingquan_tv_main"
+                />
+        </LinearLayout>
+        <LinearLayout
+            style="@style/MainItemLinear"
+            >
+            <ImageView
+                android:id="@+id/jinkou_iv_main"
+                app:srcCompat="@mipmap/ic_launcher"
+                style="@style/MainItem_iv"
+                />
+
+            <TextView
+                style="@style/view"
+                android:text="进口特惠"
+                android:id="@+id/jinkou_tv_main"
+                />
+        </LinearLayout>
+        <LinearLayout
+            style="@style/MainItemLinear">
+            <ImageView
+                android:id="@+id/mianfei_iv_main"
+                app:srcCompat="@mipmap/ic_launcher"
+                style="@style/MainItem_iv"
+                />
+
+            <TextView
+                style="@style/view"
+                android:text="免费试用"
+                android:id="@+id/mianfei_tv_main"
+                />
+        </LinearLayout>
+        <LinearLayout
+            style="@style/MainItemLinear">
+            <ImageView
+                android:id="@+id/yunma_iv_main"
+                app:srcCompat="@mipmap/ic_launcher"
+                style="@style/MainItem_iv"
+                />
+
+            <TextView
+                style="@style/view"
+                android:text="孕妈专区"
+                android:id="@+id/yunma_tv_main"
+                />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

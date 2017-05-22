@@ -1,0 +1,71 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             tools:context="com.redbaby.home.view.UserFragment"
+    android:orientation="vertical">
+    <LinearLayout
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:orientation="horizontal"
+                  android:paddingTop="10dp"
+                  android:paddingLeft="10dp"
+                  android:paddingRight="10dp">
+        <ImageView
+            android:id="@+id/sm_img_f"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:src="@mipmap/icon_scan_top" />
+
+        <RelativeLayout
+            android:layout_marginLeft="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_weight="3"
+            android:background="@drawable/gradient_box">
+
+            <ImageView
+                android:id="@+id/search_icon"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:src="@mipmap/icon_search_home" />
+
+            <TextView
+                android:id="@+id/secarch_f"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_toRightOf="@+id/search_icon"
+                android:background="@null"
+                android:text="商品/店铺" />
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_marginLeft="10dp"
+            android:id="@+id/mes_img"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:src="@mipmap/icon_mes_top" />
+    </LinearLayout>
+
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tablayout_F"
+        android:layout_below="@+id/linear_top"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        ></android.support.design.widget.TabLayout>
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewPager_F"
+        android:layout_below="@+id/tablayout_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        ></android.support.v4.view.ViewPager>
+
+
+</LinearLayout>

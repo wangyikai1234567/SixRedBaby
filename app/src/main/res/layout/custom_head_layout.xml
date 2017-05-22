@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    >
+
+
+    <LinearLayout
+        android:id="@+id/ll_head"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="5dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ProgressBar
+            android:id="@+id/custom_progressbar"
+            style="?android:attr/progressBarStyleSmallInverse"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:indeterminateDrawable="@drawable/progressbar" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="100%正品保证,假就赔"
+            android:textColor="#000000"
+            android:textSize="11sp" />
+
+
+    </LinearLayout>
+
+    <ImageView
+        android:visibility="invisible"
+        android:id="@+id/iv_mama_and_baby"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/ll_head"
+        android:layout_centerInParent="true"
+         />
+
+    <ImageView
+        android:id="@+id/iv_mama"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/ll_head"
+        android:src="@mipmap/img_mama" />
+
+    <ImageView
+        android:id="@+id/iv_baby"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/ll_head"
+        android:layout_alignParentRight="true"
+        android:src="@mipmap/img_baby" />
+
+
+</RelativeLayout>

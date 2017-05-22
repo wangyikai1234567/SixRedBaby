@@ -8,16 +8,48 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
     <style name="MainButtonStyle">
-        <!-- Customize your theme here. -->
         <item name="android:layout_width">0dp</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:layout_weight">1</item>
         <item name="android:button">@null</item>
-        <!--	<item name="android:drawablePadding">3dp</item>-->
-        <item
-            name="android:textColor">@drawable/bottom_button_text_selector
-        </item>
+        <item name="android:textColor">@drawable/bottom_button_text_selector</item>
         <item name="android:textSize">10sp</item>
         <item name="android:gravity">center</item>
     </style>
+
+    <style name="view">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+    <style name="view1">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+
+    </style>
+    <style name="MainTopStyle">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+
+    </style>
+    <style name="Mainregion">
+        <item name="android:src">@mipmap/ic_launcher</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">50dp</item>
+        <item name="android:layout_centerInParent">true</item>
+    </style>
+    <style name="seperate_line">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0.5dp</item>
+        <item name="android:layout_marginBottom">14.0dip</item>
+        <item name="background">@color/subscribe_item_drag_stroke</item>
+    </style>
+
+    <style name="MainItem_iv" parent="view">
+        <item name="android:layout_weight">1</item>
+    </style>
+    <style name="MainItemLinear" parent="MainItem_iv">
+        <item name="android:orientation">vertical</item>
+        <item name="android:gravity">center</item>
+    </style>
+
 </resources>

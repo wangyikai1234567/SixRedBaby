@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+    <ImageView
+        android:src="@mipmap/ic_launcher"
+        style="@style/view1"
+        />
+    <ImageView
+        android:id="@+id/cai_iv_main"
+        android:src="@mipmap/ic_launcher"
+        style="@style/view1"
+        />
+    <LinearLayout
+        style="@style/view1"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_weight="1"
+            android:id="@+id/mes_tv_main"
+            android:text="adcdscdsc"
+            style="@style/view1"/>
+        <TextView
+            android:id="@+id/cai_price_tv_main"
+            android:text="adcdscdsc"
+            style="@style/view"/>
+
+
+
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_marginTop="40dp"
+        style="@style/view1"
+        >
+
+        <TextView
+            android:id="@+id/cai_tv_pj_main"
+            android:text="TextView"
+            style="@style/view1"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"/>
+    </RelativeLayout>
+
+</LinearLayout>

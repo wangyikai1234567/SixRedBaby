@@ -3,4 +3,6 @@
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
+    <color name="gray">#E8E8E8</color> <!--灰色 -->
+    <color name="subscribe_item_drag_stroke">#ffd2d2d2</color>
 </resources>
