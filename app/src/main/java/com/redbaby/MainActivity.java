@@ -3,7 +3,6 @@ package com.redbaby;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.widget.RadioGroup;
-
 import com.redbaby.base.BaseActivity;
 import com.redbaby.group.GroupFragment;
 import com.redbaby.home.view.UserFragment;
@@ -20,7 +19,6 @@ public class MainActivity extends BaseActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
         initViews();
         setRgChecked();
     }

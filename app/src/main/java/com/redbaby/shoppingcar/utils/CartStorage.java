@@ -1,15 +1,4 @@
-package com.redbaby.utils;
-
-import android.content.Context;
-import android.text.TextUtils;
-import android.util.SparseArray;
-
-import com.google.gson.Gson;
-import com.google.gson.reflect.TypeToken;
-import com.redbaby.bean.GoodsBean;
-
-import java.util.ArrayList;
-import java.util.List;
+package com.redbaby.shoppingcar.utils;
 
 /**
  * data:2017/5/17
