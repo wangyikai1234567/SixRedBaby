@@ -28,6 +28,7 @@ public class AlphaPageTransformer extends BasePageTransformer
     {
         mMinAlpha = minAlpha;
         mPageTransformer = pageTransformer;
+
     }
 
     @TargetApi(Build.VERSION_CODES.HONEYCOMB)
