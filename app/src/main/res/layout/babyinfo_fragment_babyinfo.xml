@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tv_babyinfo_desc"
+        android:layout_marginTop="40dp"
+        android:text="女王，请选择当前的状态"
+        android:layout_centerHorizontal="true"
+        android:textSize="18sp"
+        android:textColor="#FF5A54"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <ImageView
+        android:layout_marginTop="220dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="30dp"
+        android:id="@+id/iv_babyinfo_baby_icon"
+        android:background="@mipmap/guide_gather_birthed_baby_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <ImageView
+        android:layout_alignBottom="@+id/iv_babyinfo_baby_icon"
+        android:id="@+id/iv_babyinfo_checked_baby"
+        android:layout_alignRight="@+id/iv_babyinfo_baby_icon"
+        android:background="@mipmap/guide_gather_checked"
+        android:visibility="invisible"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:text="家有宝宝"
+        android:textSize="18sp"
+        android:textColor="#FF5A54"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/textView"
+        android:layout_alignBottom="@+id/textView"
+        android:layout_alignStart="@+id/iv_babyinfo_baby_icon"
+        android:layout_marginStart="12dp" />
+
+
+    <ImageView
+        android:layout_below="@+id/tv_babyinfo_desc"
+        android:layout_marginTop="45dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/iv_babyinfo_pregnant_icon"
+        android:background="@mipmap/guide_gather_pregnanted_baby_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <ImageView
+        android:layout_alignBottom="@+id/iv_babyinfo_pregnant_icon"
+        android:id="@+id/iv_babyinfo_checked_pregnant"
+        android:layout_alignRight="@+id/iv_babyinfo_pregnant_icon"
+        android:background="@mipmap/guide_gather_checked"
+        android:visibility="invisible"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_below="@+id/iv_babyinfo_checked_pregnant"
+        android:layout_centerHorizontal="true"
+        android:text="我怀孕了"
+        android:textSize="18sp"
+        android:textColor="#FF5A54"
+        android:layout_marginTop="8dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+    <ImageView
+        android:layout_marginTop="220dp"
+        android:id="@+id/iv_babyinfo_prepregnant_icon"
+        android:layout_marginLeft="30dp"
+        android:background="@mipmap/guide_gather_prepregnant_baby_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <ImageView
+        android:layout_alignBottom="@+id/iv_babyinfo_prepregnant_icon"
+        android:id="@+id/iv_babyinfo_checked_prepregnant"
+        android:layout_alignRight="@+id/iv_babyinfo_prepregnant_icon"
+        android:background="@mipmap/guide_gather_checked"
+        android:visibility="invisible"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:text="我在备孕"
+        android:textSize="18sp"
+        android:textColor="#FF5A54"
+        android:layout_marginTop="8dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/iv_babyinfo_prepregnant_icon"
+        android:layout_alignEnd="@+id/iv_babyinfo_prepregnant_icon"
+        android:layout_marginEnd="11dp"
+        android:id="@+id/textView" />
+
+
+</RelativeLayout>

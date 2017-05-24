@@ -25,6 +25,8 @@ public abstract class BaseActivity extends AppCompatActivity implements IBaseVie
         updateViews(false);
     }
 
+
+
     private void updateViews(boolean b) {
 
     }

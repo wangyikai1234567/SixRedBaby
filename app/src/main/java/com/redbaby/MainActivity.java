@@ -14,7 +14,6 @@ public class MainActivity extends BaseActivity {
 
     private RadioGroup mRg;
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

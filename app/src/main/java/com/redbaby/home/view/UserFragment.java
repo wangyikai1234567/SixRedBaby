@@ -76,6 +76,6 @@ public class UserFragment extends Fragment {
         tablayout_F.setTabMode(TabLayout.MODE_SCROLLABLE);
         tablayout_F.setTabTextColors(Color.BLACK,Color.RED);
         tablayout_F.setupWithViewPager(viewPager_F);//tab关联viewPager
-        viewPager_F.setAdapter(new PageVPAdapter(getFragmentManager(),title,uri));//给viewPager设置适配器
+        viewPager_F.setAdapter(new PageVPAdapter(getChildFragmentManager(),title,uri));//给viewPager设置适配器
     }
 }
