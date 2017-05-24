@@ -34,4 +34,6 @@ dependencies {
     compile 'com.android.support:support-v4:25.3.1'
     testCompile 'junit:junit:4.12'
     compile project(':mycustomrefresh')
+    compile project(':library')
+    compile 'com.github.xiangtailiang:tablayout:1.0.0'
 }

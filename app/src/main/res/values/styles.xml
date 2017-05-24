@@ -51,5 +51,24 @@
         <item name="android:orientation">vertical</item>
         <item name="android:gravity">center</item>
     </style>
+    <style name="group_radioButton_style">
+        <item name="android:button">@null</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
 
+    </style>
+    android:drawableTop="@mipmap/ic_launcher"
+    android:text="asdasdasd"/>
+
+    //toolbar
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar"/>
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light"/>
 </resources>

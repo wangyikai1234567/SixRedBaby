@@ -4,7 +4,7 @@ import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.widget.RadioGroup;
 import com.redbaby.base.BaseActivity;
-import com.redbaby.group.GroupFragment;
+import com.redbaby.group.fragment.GroupFragment;
 import com.redbaby.home.view.UserFragment;
 import com.redbaby.my.MyFragment;
 import com.redbaby.shoppingcar.ShopFragment;

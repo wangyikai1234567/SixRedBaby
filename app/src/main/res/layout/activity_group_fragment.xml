@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_group_fragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/lpg_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/white"
+        android:theme="@style/AppTheme.AppBarOverlay"
+        app:popupTheme="@style/AppTheme.PopupOverlay"
+        app:title="乐拼购"/>
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/mTb"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        app:tabIndicatorColor="@color/red"
+        app:tabMode="scrollable"
+        app:tabTextColor="@color/changecolor">
+    </android.support.design.widget.TabLayout>
+
+    <FrameLayout
+        android:id="@+id/lpg_fl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+    </FrameLayout>
+
+    <RadioGroup
+        android:id="@+id/lpg_rg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/radioButton"
+            style="@style/group_radioButton_style"
+            android:drawableTop="@mipmap/ic_launcher"
+            android:text="@string/group_radiobutton_lpg"/>
+
+        <RadioButton
+            style="@style/group_radioButton_style"
+            android:drawableTop="@mipmap/ic_launcher"
+            android:text="@string/group_radiobutton_wfjs"/>
+
+        <RadioButton
+            style="@style/group_radioButton_style"
+            android:drawableTop="@mipmap/ic_launcher"
+            android:text="@string/group_radiobutton_wdpg"/>
+    </RadioGroup>
+</LinearLayout>
